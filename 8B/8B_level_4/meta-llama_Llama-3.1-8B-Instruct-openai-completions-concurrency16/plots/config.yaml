@@ -1,0 +1,60 @@
+plot1:
+  title: Time to First Token
+  x_metric: ''
+  y_metric: time_to_first_tokens
+  x_label: Time to First Token (ms)
+  y_label: ''
+  width: 700
+  height: 450
+  type: box
+  paths:
+  - artifacts/meta-llama_Llama-3.1-8B-Instruct-openai-completions-concurrency16/profile_export.json
+  output: artifacts/meta-llama_Llama-3.1-8B-Instruct-openai-completions-concurrency16/plots
+plot2:
+  title: Request Latency
+  x_metric: ''
+  y_metric: request_latencies
+  x_label: Request Latency (ms)
+  y_label: ''
+  width: 700
+  height: 450
+  type: box
+  paths:
+  - artifacts/meta-llama_Llama-3.1-8B-Instruct-openai-completions-concurrency16/profile_export.json
+  output: artifacts/meta-llama_Llama-3.1-8B-Instruct-openai-completions-concurrency16/plots
+plot3:
+  title: Distribution of Input Sequence Lengths to Output Sequence Lengths
+  x_metric: input_sequence_lengths
+  y_metric: output_sequence_lengths
+  x_label: Input Sequence Length
+  y_label: Output Sequence Length
+  width: 700
+  height: 450
+  type: heatmap
+  paths:
+  - artifacts/meta-llama_Llama-3.1-8B-Instruct-openai-completions-concurrency16/profile_export.json
+  output: artifacts/meta-llama_Llama-3.1-8B-Instruct-openai-completions-concurrency16/plots
+plot4:
+  title: Time to First Token vs Input Sequence Lengths
+  x_metric: input_sequence_lengths
+  y_metric: time_to_first_tokens
+  x_label: Input Sequence Length
+  y_label: Time to First Token (ms)
+  width: 700
+  height: 450
+  type: scatter
+  paths:
+  - artifacts/meta-llama_Llama-3.1-8B-Instruct-openai-completions-concurrency16/profile_export.json
+  output: artifacts/meta-llama_Llama-3.1-8B-Instruct-openai-completions-concurrency16/plots
+plot5:
+  title: Token-to-Token Latency vs Output Token Position
+  x_metric: token_positions
+  y_metric: inter_token_latencies
+  x_label: Output Token Position
+  y_label: Token-to-Token Latency (ms)
+  width: 700
+  height: 450
+  type: scatter
+  paths:
+  - artifacts/meta-llama_Llama-3.1-8B-Instruct-openai-completions-concurrency16/profile_export.json
+  output: artifacts/meta-llama_Llama-3.1-8B-Instruct-openai-completions-concurrency16/plots
