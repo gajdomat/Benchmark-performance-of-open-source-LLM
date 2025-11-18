@@ -10,7 +10,6 @@
 
 source /home/gajdomat/llama3_env/bin/activate
 
-HF_TOKEN=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
 huggingface-cli login --token $HF_TOKEN --add-to-git-credential
 
 source vllm/bin/activate
